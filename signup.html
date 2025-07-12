@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signupform</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      background-color: #f3f3f3;
+    }
+
+    .signup-wrapper {
+      display: flex;
+      width: 100%;
+    }
+
+    .signup-left {
+      flex: 1;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .signup-left img.logo {
+      width: 200px;
+      margin-bottom: 30px;
+    }
+
+    .signup-left h2 {
+      margin-bottom: 25px;
+      color: #222;
+    }
+
+    .signup-left form {
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .signup-left input {
+      width: 100%;
+      padding: 12px 15px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .signup-left button {
+      width: 100%;
+      padding: 12px;
+      background-color: #d61f1f;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: background-color 0.3s ease;
+    }
+
+    .signup-left button:hover {
+      background-color: #aa1717;
+    }
+
+    .signup-left p {
+      margin-top: 15px;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .signup-left p a {
+      color: #d61f1f;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .account {
+      padding-top: 30px;
+    }
+
+    .signup-right {
+      flex: 1;
+      background: url('https://shop.lifefitness.com/cdn/shop/files/club-series-treadmill-update-lifestyle-1-1000x1000_f69c3280-1dc7-44c6-b4c5-b12c469cd599.jpg?v=1709238005&width=1200') no-repeat center center;
+      background-size: cover;
+    }
+
+    @media (max-width: 768px) {
+      .signup-wrapper {
+        flex-direction: column;
+      }
+
+      .signup-right {
+        height: 250px;
+      }
+    }
+
+    /* -------------------------animationstart-------------------------------------- */
+    .signup-right {
+      flex: 1;
+      background: url('https://shop.lifefitness.com/cdn/shop/files/club-series-treadmill-update-lifestyle-1-1000x1000_f69c3280-1dc7-44c6-b4c5-b12c469cd599.jpg?v=1709238005&width=1200') no-repeat center center;
+      background-size: cover;
+      animation: premiumMotion 18s ease-in-out infinite alternate;
+      transform-origin: center;
+    }
+
+    @keyframes premiumMotion {
+      0% {
+        transform: scale(1) rotate(0deg) translateX(0px);
+      }
+
+      50% {
+        transform: scale(1.07) rotate(0.7deg) translateX(-20px);
+      }
+
+      100% {
+        transform: scale(1) rotate(0deg) translateX(0px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="signup-wrapper">
+    <!-- signup Form -->
+    <div class="signup-left">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0538/8307/6805/files/LFHS_Product_Hammer_Red_Black_2024_RGB_AW_500PX_200x60@2x.png?v=1731622471.webp"
+        class="logo" alt="Logo" />
+      <h2>SIGNUP</h2>
+      <form>
+        <input type="name" placeholder="Type Your name" required />
+        <input type="email" placeholder="Enter your working Email" required />
+        <input type="password" placeholder="Password" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">SIGNUP</button>
+        <p class="account">Already have an account? <a href="login.html">Login</a></p>
+      </form>
+    </div>
+    <div class="signup-right"></div>
+</body>
+
+</html>
